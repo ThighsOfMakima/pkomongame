@@ -5,6 +5,7 @@
 
 /* START-USER-IMPORTS */
 import CHARACTERS from '../data/characters.js';
+import { GameInput } from "../GameInput.js";
 /* END-USER-IMPORTS */
 
 export default class CharMenu extends Phaser.Scene {
@@ -184,27 +185,9 @@ export default class CharMenu extends Phaser.Scene {
 			this.skillDesc.setText(character.activeSkillDesc);
 			this.charPreview.setTexture(character.charSprite);
 		}
-
-		this.input.keyboard.on('keydown-UP', () => {
-			this.selectedCharIndex--;
-
-			if (this.selectedCharIndex < 0) {
-				this.selectedCharIndex = this.characters.length - 1;
-			}
-
-			this.updateCharacterSelection();
-
-
-		})
-		this.input.keyboard.on('keydown-DOWN', () => {
-			this.selectedCharIndex++;
-
-			if (this.selectedCharIndex >= this.characters.length) {
-				this.selectedCharIndex = 0;
-			}
-
-			this.updateCharacterSelection();
-		})
+		this.scene.down = this.scene.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN)
+		this.scene.up = this.scene.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP)
+		this.scene.space = this.scene.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
 
 		this.updateCharacterSelection()
 
@@ -217,16 +200,29 @@ export default class CharMenu extends Phaser.Scene {
 			repeat: -1,
 			ease: 'Sine.inOut'
 		})
+	}
 
-		this.input.keyboard.on("keydown-SPACE", () => {
-			console.log(this.characters[this.selectedCharIndex]);
+	update() {
+		if (Phaser.Input.Keyboard.JustDown(this.scene.down) || GameInput.down) {
+			this.selectedCharIndex++;
+			if (this.selectedCharIndex >= this.characters.length) {
+				this.selectedCharIndex = 0;
+			}
+			this.updateCharacterSelection();
+		}
+		if (Phaser.Input.Keyboard.JustDown(this.scene.up) || GameInput.up) {
+			this.selectedCharIndex--;
+			if (this.selectedCharIndex < 0) {
+				this.selectedCharIndex = this.characters.length - 1;
+			}
+			this.updateCharacterSelection();
+		}
+		if (Phaser.Input.Keyboard.JustDown(this.scene.space) || GameInput.A) {
 			this.scene.start('Game', {
 				char: this.characters[this.selectedCharIndex]
 			});
 		}
-		);
 	}
-
 
 
 	/* END-USER-CODE */

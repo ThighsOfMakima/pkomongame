@@ -39,6 +39,6 @@ bindButton('down', 'down');
 bindButton('A', 'A');
 bindButton('A', 'B');
 
-window.addEventListener('contextmenu', e => {
-    e.preventDefault();
-});
+// window.addEventListener('contextmenu', e => {
+//     e.preventDefault();
+// });

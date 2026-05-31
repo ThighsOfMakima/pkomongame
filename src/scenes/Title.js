@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 /* START-USER-IMPORTS */
+import { GameInput } from "../GameInput.js";
 /* END-USER-IMPORTS */
 
 export default class Title extends Phaser.Scene {
@@ -59,13 +60,36 @@ export default class Title extends Phaser.Scene {
 	logo;
 
 	/* START-USER-CODE */
+
+	transition() {
+		this.floatTween.stop();
+		this.tweens.add({
+			targets: this.startText,
+			alpha: 0,
+			duration: 300
+		});
+
+		this.tweens.add({
+			targets: this.logo,
+			y: 150,
+			scaleX: 0.5,
+			scaleY: 0.5,
+			duration: 1200,
+			ease: 'Cubic.easeInOut',
+			onComplete: () => {
+				this.scene.start('MainMenu', {
+					from: 'Title'
+				});
+			}
+		})
+	}
 	create() {
 		this.editorCreate();
 		const logo = this.logo;
 		const startText = this.pressStart;
 		const startY = logo.y;
 
-		const floatTween = this.tweens.add({
+		this.floatTween = this.tweens.add({
 			targets: logo,
 			y: startY + 10,
 			duration: 6000,
@@ -81,29 +105,13 @@ export default class Title extends Phaser.Scene {
 				startText.visible = !startText.visible;
 			}
 		})
+		this.scene.spaceKey = this.scene.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
+	}
 
-		this.input.keyboard.once('keydown-SPACE', () => {
-			floatTween.stop();
-			this.tweens.add({
-				targets: startText,
-				alpha: 0,
-				duration: 300
-			});
-
-			this.tweens.add({
-				targets: logo,
-				y: 150,
-				scaleX: 0.5,
-				scaleY: 0.5,
-				duration: 1200,
-				ease: 'Cubic.easeInOut',
-				onComplete: () => {
-					this.scene.start('MainMenu', {
-						from: 'Title'
-					});
-				}
-			})
-		})
+	update() {
+		if (Phaser.Input.Keyboard.JustDown(this.scene.spaceKey) || GameInput.A) {
+			this.transition();
+		}
 	}
 	/* END-USER-CODE */
 }

@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 /* START-USER-IMPORTS */
+import { GameInput } from "../GameInput.js";
 /* END-USER-IMPORTS */
 
 export default class MainMenu extends Phaser.Scene {
@@ -121,6 +122,7 @@ export default class MainMenu extends Phaser.Scene {
 	create(data) {
 
 		this.editorCreate();
+		this.scene.space = this.scene.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
 		this.playBtn = function playBtn() {
 
 			if (data.fromScreamer) {
@@ -224,15 +226,6 @@ export default class MainMenu extends Phaser.Scene {
 			this.updateMenuSelection();
 		});
 
-		this.input.keyboard.on("keydown-SPACE", () => {
-			switch (this.selectedIndex) {
-				case 0:
-					this.playBtn();
-				case 1:
-					break;
-
-			}
-		})
 		this.animsFromTitle = function animsFromTitle() {
 			this.tweens.add({
 				targets: this.playButtonCtr,
@@ -262,6 +255,17 @@ export default class MainMenu extends Phaser.Scene {
 		this.animsFromTitle();
 
 		/* END-USER-CODE */
+	}
+	update() {
+		if (Phaser.Input.Keyboard.JustDown(this.scene.space) || GameInput.A) {
+			switch (this.selectedIndex) {
+				case 0:
+					this.playBtn();
+				case 1:
+					break;
+
+			}
+		}
 	}
 }
 
