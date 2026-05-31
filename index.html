@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title>My Game</title>
+	<title>Пькомони</title>
 
     <script src="https://cdn.jsdelivr.net/npm/phaser@v4.0.0/dist/phaser.min.js"></script>
 	<script src="src/main.js" type="module"></script>
@@ -16,16 +16,98 @@
 			margin: 0;
 			padding: 0;
 		}
-
+		html, body {
+   			overscroll-behavior: none;
+		}
 		@font-face {
   			font-family: 'uvKits';
   			src: url('assets/uvKits.ttf');
 		}
+		#screen {
+			padding: 2.5vh 1vw 2.5vh 1vw;
+			width: 95vw;
+			margin: auto;
+			background: darkgray;
+			height: fit-content;
+		}
+		#game-container {
+			text-align: center;
+		}
+		#controls-mobile {
+			height: 30vh;
+			display: flex;
+		}
+		#dpad {
+			height: 30vh;
+			width: 60vh;
+			display: block;
+			margin-left: 10px;
+		}
+		#abbuttons {
+			height: 30vh;
+			width: 40vh;
+		}
+
+		.dpadbutton {
+			width: 75px;
+			height: 75px;
+			background: white;
+			font-size: 50px;
+			text-align: center;
+		}
+		.up {
+			margin-left: 75px;
+		}
+		.down {
+			margin-left: 75px;
+		}
+		.left {
+			margin-top: -150px;
+		}
+		.right {
+			padding-top: 10px;
+			height: 65px;
+			margin-left: 150px;
+			}
+
+		#A {
+			height: 75px;
+			width: 75px;
+			background: white;
+			font-size: 50px;
+			text-align: center;
+			margin: auto;
+		}
+		#B {
+			height: 75px;
+			width: 75px;
+			background: white;
+			font-size: 50px;
+			text-align: center;
+			margin: auto;
+			margin-top: 50px;
+		}
+		#abbuttons {
+			margin-top: 10px;
+		}
 	</style>
 
 </head>
-
-<body>
+	<div id="screen">
+		<div id="game-container"></div>
+	</div>
+	<div id="controls-mobile">
+		<div id="dpad">
+			<div id="up" class="dpadbutton up">▲</div>
+			<div id="right" class="dpadbutton right">▶</div>
+			<div id="down" class="dpadbutton down">▼</div>
+			<div id="left" class="dpadbutton left">◀</div>
+		</div>
+		<div id="abbuttons">
+			<div id="A">A</div>
+			<div id="B">B</div>
+		</div>
+	</div>
 </body>
 
 </html>

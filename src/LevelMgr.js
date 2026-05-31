@@ -1,5 +1,6 @@
 import Enemy from "./objectds/Enemy.js";
 import Player from "./objectds/Player.js";
+import { GameInput } from "./GameInput.js";
 
 export default class LevelMgr {
     constructor(scene, requiredToCollect = 3, lvlIndex = 1, data) {
@@ -269,16 +270,16 @@ export default class LevelMgr {
         this.scene.player.height = 128;
     }
     getHeldDirection() {
-        if (this.scene.cursors.left.isDown)
+        if (this.scene.cursors.left.isDown || GameInput.left)
             return { x: -1, y: 0 };
 
-        if (this.scene.cursors.right.isDown)
+        if (this.scene.cursors.right.isDown || GameInput.right)
             return { x: 1, y: 0 };
 
-        if (this.scene.cursors.up.isDown)
+        if (this.scene.cursors.up.isDown || GameInput.up)
             return { x: 0, y: -1 };
 
-        if (this.scene.cursors.down.isDown)
+        if (this.scene.cursors.down.isDown || GameInput.down)
             return { x: 0, y: 1 };
 
         return null;
@@ -494,7 +495,7 @@ export default class LevelMgr {
             this.scene.player.move(dir.x, dir.y);
         }
         this.scene.LevelMgr.checkEnemyHit();
-        if (Phaser.Input.Keyboard.JustDown(this.scene.spaceKey)) {
+        if (Phaser.Input.Keyboard.JustDown(this.scene.spaceKey) || GameInput.A) {
             this.scene.player.ability.use(this.scene.time.now);
             this.scene.LevelMgr.refreshUI();
         }

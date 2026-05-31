@@ -14,9 +14,9 @@ window.addEventListener('load', function () {
 		height: 820,
 		type: Phaser.AUTO,
 		backgroundColor: "#242424",
+		parent: 'game-container',
 		scale: {
 			mode: Phaser.Scale.FIT,
-			autoCenter: Phaser.Scale.CENTER_BOTH
 		}
 	});
 	game.scene.add('Game3', Game3);
