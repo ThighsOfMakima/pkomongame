@@ -4,25 +4,44 @@ export default class SlowZone extends Ability {
 
     constructor(scene, player) {
         super(scene, player);
-        this.cooldown = 5000;
+        this.cooldown = 6000;
+        this.duration = 2000;
         this.isPassive = true;
-        this.activeUsed = false;
+        this.active = false;
         this.correctDirections = [{ x: -1, y: 0 }, { x: 1, y: 0 }, { x: 0, y: -1 }, { x: 0, y: 1 }];
     }
 
     passive(time) {
+        this.scene.LevelMgr.scoreMultiplier = 1.5;
         this.stoned();
     }
     use(time) {
-        this.activeUsed = true;
+        if (!super.use(time)) {
+            return false;
+        }
         this.scene.cameras.main.shake(200);
-        this.scene.time.delayedCall(3000, () => {
-            this.activeUsed = false;
-        })
+        this.active = true;
+        this.endTime = this.scene.time.now + this.duration;
+        this.player.setTint(0xffffff);
+        this.scene.time.addEvent({
+            delay: 50,
+            loop: true,
+            callback: () => {
+                if (!this.active) {
+                    return;
+                }
+                if (this.scene.time.now > this.endTime) {
+                    this.active = false;
+                    this.player.clearTint();
+                    return;
+                }
+            }
+        });
     }
+
     stoned() {
         this.scene.time.addEvent({
-            delay: 8000,
+            delay: 6000,
             loop: true,
             callback: () => {
                 if (!this.activeUsed) {
@@ -36,17 +55,18 @@ export default class SlowZone extends Ability {
         let directions = [{ x: -1, y: 0 }, { x: 1, y: 0 }, { x: 0, y: -1 }, { x: 0, y: 1 }]
         shuffle(directions);
         this.scene.LevelMgr.getHeldDirection = function () {
+            console.log(this.scene.player.ability.active);
             if (this.scene.cursors.left.isDown)
-                return directions[0];
+                return this.scene.player.ability.active ? this.correctDirections[0] : directions[0];
 
             if (this.scene.cursors.right.isDown)
-                return directions[1];
+                return this.scene.player.ability.active ? this.correctDirections[1] : directions[1];
 
             if (this.scene.cursors.up.isDown)
-                return directions[2];
+                return this.scene.player.ability.active ? this.correctDirections[2] : directions[2];
 
             if (this.scene.cursors.down.isDown)
-                return directions[3];
+                return this.scene.player.ability.active ? this.correctDirections[3] : directions[3];
 
             return null;
 

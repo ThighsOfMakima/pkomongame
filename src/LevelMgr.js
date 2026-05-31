@@ -6,8 +6,9 @@ export default class LevelMgr {
         this.scene = scene;
         this.requiredTotal = requiredToCollect;
         this.requiredCollected = 0;
-
+        this.correctDirections = [{ x: -1, y: 0 }, { x: 1, y: 0 }, { x: 0, y: -1 }, { x: 0, y: 1 }]
         this.requiredItems = null;
+        this.scoreMultiplier = 1;
         this.optionalItems = null;
         this.score = data.score || 0;
 
@@ -182,7 +183,7 @@ export default class LevelMgr {
             "required"
         ) {
 
-            this.score += 1000;
+            this.score += 1000 * this.scoreMultiplier;
             this.level.requiredCollected = this.level.requiredCollected == this.requiredTotal ? this.level.requiredCollected : this.level.requiredCollected + 1;
 
             if (
@@ -201,7 +202,7 @@ export default class LevelMgr {
 
         else {
 
-            this.score += 500;
+            this.score += 500 * this.scoreMultiplier;
 
         }
 

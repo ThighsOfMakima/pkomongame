@@ -76,9 +76,9 @@ const CHARACTERS = [
     {
         id: 'tuposaur',
         name: 'Тупозавр',
-        activeSkillName: 'Цейво... Забув.',
+        activeSkillName: 'Роздуплився',
         activeSkillDuration: 2,
-        activeSkillDesc: 'Журба таки вбиває',
+        activeSkillDesc: 'Постійно тупить',
         activeSkillFunc: Tupozaur,
         charSprite: 'tupozavr',
         skillColor: '#d1f2bf',
