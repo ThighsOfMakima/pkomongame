@@ -1,0 +1,48 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "url": "assets/tilemaps/lvl1].json",
+                "type": "tilemapTiledJSON",
+                "key": "lvl1]"
+            },
+            {
+                "url": {
+                    "IMG": "src/components/Pkomon-11-05-2026 (1).pixel-8bit.png"
+                },
+                "type": "texture",
+                "key": "Pkomon-11-05-2026 (1).pixel-8bit"
+            },
+            {
+                "url": "assets/Pkomon-11-05-2026 (1).pixel-8bit.png",
+                "type": "image",
+                "key": "Pkomon-11-05-2026 (1).pixel-8bit_1"
+            },
+            {
+                "url": "assets/uvKits.ttf",
+                "format": "truetype",
+                "descriptors": {},
+                "type": "font",
+                "key": "uvKits"
+            },
+            {
+                "url": "assets/tilemaps/walls_floor.png",
+                "type": "image",
+                "key": "walls_floor"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

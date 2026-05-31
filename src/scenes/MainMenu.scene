@@ -1,0 +1,158 @@
+{
+    "id": "6586d351-f58a-4c8a-9ac4-bcf0988a6ec3",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "MainMenu",
+        "borderWidth": 900,
+        "borderHeight": 820
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "30dff041-da68-483f-a29f-244bd4cf80a8",
+            "label": "bg",
+            "scope": "CLASS",
+            "texture": {
+                "key": "Знімок екрана 2026-05-11 о 15.12.35"
+            },
+            "x": 660,
+            "y": 369,
+            "scaleX": 2.4963618814518553,
+            "scaleY": 2.4963618814518553
+        },
+        {
+            "type": "Image",
+            "id": "cf2514b1-30ac-4b61-b18f-cafa934675d1",
+            "label": "logo",
+            "scope": "CLASS",
+            "texture": {
+                "key": "logo"
+            },
+            "x": 450,
+            "y": 150,
+            "scaleX": 0.4990913477279374,
+            "scaleY": 0.4990913477279374
+        },
+        {
+            "type": "Container",
+            "id": "26807e8c-4e0e-4609-b15f-22bc2bcbdd33",
+            "label": "playButtonCtr",
+            "scope": "CLASS",
+            "x": 7,
+            "y": 321,
+            "scaleX": 0.9412810211823127,
+            "scaleY": 0.9412810211823127,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b04cb898-f8ec-4432-a1f2-2f0f7cabad16",
+                    "label": "buttonbg1",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "buttonbg1"
+                    },
+                    "x": -282,
+                    "y": 76,
+                    "scaleX": 1.5259378093025389,
+                    "scaleY": 1.5259378093025389
+                },
+                {
+                    "type": "Text",
+                    "id": "56bbe0f8-6ec4-449b-b5c3-24232077ed50",
+                    "label": "playButton",
+                    "scope": "CLASS",
+                    "x": -385,
+                    "y": 43,
+                    "text": "ГРАТИ",
+                    "fontFamily": "uvKits",
+                    "fontSize": "70px",
+                    "color": "#000000ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "b6ec6911-16d8-4d85-8a94-9833bcc45e17",
+            "label": "ratingBtnCnt",
+            "scope": "CLASS",
+            "x": 9,
+            "y": 454,
+            "scaleX": 0.9412810211823127,
+            "scaleY": 0.9412810211823127,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "074a46f4-72ce-457e-8572-652642b95912",
+                    "label": "buttonbg",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "buttonbg1"
+                    },
+                    "x": -282,
+                    "y": 76,
+                    "scaleX": 1.5259378093025389,
+                    "scaleY": 1.5259378093025389
+                },
+                {
+                    "type": "Text",
+                    "id": "ff2fc620-84b0-4422-9a24-5b4bd05b0f8d",
+                    "label": "playButton_1",
+                    "scope": "CLASS",
+                    "x": -426,
+                    "y": 43,
+                    "text": "РЕЙТИНГ\n",
+                    "fontFamily": "uvKits",
+                    "fontSize": "70px",
+                    "color": "#000000ff"
+                }
+            ]
+        },
+        {
+            "type": "Text",
+            "id": "af083942-7dbd-4338-843d-ad7124d056b2",
+            "label": "text_1",
+            "x": 166.9606148756215,
+            "y": 740.748972165174,
+            "scaleX": 0.9057260323980112,
+            "scaleY": 0.9057260323980112,
+            "text": "©26'ЛяжкиМакіми inc.\n",
+            "fontFamily": "uvKits",
+            "fontSize": "50px"
+        },
+        {
+            "type": "Container",
+            "id": "4e44c61a-3481-4e16-9c4f-d2fe4e56a62f",
+            "label": "container_1",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "dd6230b2-0698-486c-b5b9-41d6a8e1c2a5",
+                    "label": "menu_screamer",
+                    "scope": "CLASS",
+                    "texture": {
+                        "key": "menu screamer"
+                    },
+                    "x": 396,
+                    "y": 403,
+                    "alpha": 0,
+                    "alphaTopLeft": 0,
+                    "alphaTopRight": 0,
+                    "alphaBottomLeft": 0,
+                    "alphaBottomRight": 0
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

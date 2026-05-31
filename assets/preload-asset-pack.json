@@ -1,0 +1,239 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/Знімок екрана 2026-05-11 о 15.12.35.png",
+                "type": "image",
+                "key": "Знімок екрана 2026-05-11 о 15.12.35"
+            },
+            {
+                "url": "assets/bars.png",
+                "type": "image",
+                "key": "bars"
+            },
+            {
+                "url": "assets/bottomUI.png",
+                "type": "image",
+                "key": "bottomUI"
+            },
+            {
+                "url": "assets/buttonbg1.png",
+                "type": "image",
+                "key": "buttonbg1"
+            },
+            {
+                "url": {
+                    "IMG": "assets/coin.webp"
+                },
+                "type": "texture",
+                "key": "coin"
+            },
+            {
+                "url": "assets/exit.png",
+                "type": "image",
+                "key": "exit"
+            },
+            
+            {
+                "url": "assets/grass.jpeg",
+                "type": "binary",
+                "key": "grass"
+            },
+            {
+                "url": "assets/grass.png",
+                "type": "image",
+                "key": "grass_1"
+            },
+            {
+                "url": "assets/guapen.png",
+                "type": "image",
+                "key": "guapen"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/lewdyvoir.png"
+                },
+                "type": "texture",
+                "key": "lewdyvoir"
+            },
+            {
+                "url": "assets/logo.png",
+                "type": "image",
+                "key": "logo"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/ludomyaut.png"
+                },
+                "type": "texture",
+                "key": "ludomyaut"
+            },
+            {
+                "url": "assets/tilemaps/lvl1].json",
+                "type": "tilemapTiledJSON",
+                "key": "lvl1]"
+            },
+            {
+                "url": "assets/lvl2_1inside.png",
+                "type": "image",
+                "key": "lvl2_1inside"
+            },
+            {
+                "url": "assets/lvl2outside.png",
+                "type": "image",
+                "key": "lvl2outside"
+            },
+            {
+                "url": "assets/lvl2tilemap.png",
+                "type": "image",
+                "key": "lvl2tilemap"
+            },
+            {
+                "url": "assets/menu screamer.png",
+                "type": "image",
+                "key": "menu screamer"
+            },
+            {
+                "url": "assets/objects.png",
+                "type": "image",
+                "key": "objects"
+            },
+            {
+                "url": {
+                    "IMG": "assets/objects.png"
+                },
+                "type": "texture",
+                "key": "objects_1"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/panikdak.png"
+                },
+                "type": "texture",
+                "key": "panikdak"
+            },
+            {
+                "url": "assets/patch.png",
+                "type": "image",
+                "key": "patch"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/patchgoldentupozavr.png"
+                },
+                "type": "texture",
+                "key": "patchgoldentupozavr"
+            },
+            {
+                "url": "assets/pkoball.png",
+                "type": "image",
+                "key": "pkoball"
+            },
+            {
+                "url": "assets/pkomonlogo.png",
+                "type": "image",
+                "key": "pkomonlogo"
+            },
+            {
+                "url": "assets/pokeball.png",
+                "type": "image",
+                "key": "pokeball"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/ptsrchu.png"
+                },
+                "type": "texture",
+                "key": "ptsrchu"
+            },
+            {
+                "url": "assets/screamer.jpg",
+                "type": "image",
+                "key": "screamer"
+            },
+            {
+                "url": "assets/selectionFrame.png",
+                "type": "image",
+                "key": "selectionFrame"
+            },
+            {
+                "url": "assets/selectionUI.png",
+                "type": "image",
+                "key": "selectionUI"
+            },
+            {
+                "url": "assets/skillBar.png",
+                "type": "image",
+                "key": "skillBar"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/skvirtl.png"
+                },
+                "type": "texture",
+                "key": "skvirtl"
+            },
+            {
+                "url": "assets/star.webp",
+                "type": "image",
+                "key": "star"
+            },
+            {
+                "url": "assets/tileFrame.png",
+                "type": "image",
+                "key": "tileFrame"
+            },
+            {
+                "url": "assets/tilemaps/tilemap.png",
+                "type": "image",
+                "key": "tilemap"
+            },
+            {
+                "url": "assets/topUI.png",
+                "type": "image",
+                "key": "topUI"
+            },
+            {
+                "url": "assets/topUIHD.png",
+                "type": "image",
+                "key": "topUIHD"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/tupozavr.png"
+                },
+                "type": "texture",
+                "key": "tupozavr"
+            },
+            {
+                "url": "assets/uvKits.ttf",
+                "format": "truetype",
+                "descriptors": {},
+                "type": "font",
+                "key": "uvKits"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/zhurbnder.png"
+                },
+                "type": "texture",
+                "key": "zhurbnder"
+            },
+            {
+                "url": {
+                    "IMG": "assets/charsSprite/zradozard.png"
+                },
+                "type": "texture",
+                "key": "zradozard"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "id": "28b5a97c-757e-4d86-836c-8db35951bcea",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Title",
+        "borderWidth": 900,
+        "borderHeight": 820
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f225fae3-75f2-478b-8cc5-a06ec8678ff9",
+            "label": "______________2026_05_11___15_12_35",
+            "scope": "CLASS",
+            "texture": {
+                "key": "Знімок екрана 2026-05-11 о 15.12.35"
+            },
+            "x": 660,
+            "y": 369,
+            "scaleX": 2.4963618814518553,
+            "scaleY": 2.4963618814518553
+        },
+        {
+            "type": "Text",
+            "id": "b4d3eec9-29b3-43f7-9b09-3a3626bff581",
+            "label": "text_1",
+            "x": 166.9606148756215,
+            "y": 740.748972165174,
+            "scaleX": 0.9057260323980112,
+            "scaleY": 0.9057260323980112,
+            "text": "©26'ЛяжкиМакіми inc.\n",
+            "fontFamily": "uvKits",
+            "fontSize": "50px"
+        },
+        {
+            "type": "Text",
+            "id": "6e150dd3-de82-4dc6-9b51-a2ca9b46f26d",
+            "label": "pressStart",
+            "scope": "CLASS",
+            "x": 450,
+            "y": 510.75238519907,
+            "scaleX": 1.4515376548888677,
+            "scaleY": 1.4515376548888677,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "НАТИСНІТЬ ПРОБІЛ",
+            "fontFamily": "uvKits",
+            "fontSize": "50px"
+        },
+        {
+            "type": "Image",
+            "id": "1235e86b-c13b-4483-9969-75b6fca9dc0b",
+            "label": "logo",
+            "scope": "CLASS",
+            "texture": {
+                "key": "logo"
+            },
+            "x": 450,
+            "y": 200,
+            "scaleX": 0.62,
+            "scaleY": 0.62
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

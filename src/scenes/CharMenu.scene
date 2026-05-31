@@ -1,0 +1,142 @@
+{
+    "id": "574e3273-b801-41c4-8615-eebc53736b1e",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "CharMenu",
+        "borderWidth": 900,
+        "borderHeight": 820
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a41a2ef0-8c34-4199-965a-b62a16924712",
+            "label": "______________2026_05_11___15_12_35",
+            "scope": "CLASS",
+            "texture": {
+                "key": "Знімок екрана 2026-05-11 о 15.12.35"
+            },
+            "x": 660,
+            "y": 369,
+            "scaleX": 2.4963618814518553,
+            "scaleY": 2.4963618814518553
+        },
+        {
+            "type": "Image",
+            "id": "0186237f-c3f5-40ee-a548-cbe57553ec2f",
+            "label": "selectionUI",
+            "scope": "CLASS",
+            "texture": {
+                "key": "selectionUI"
+            },
+            "x": 450,
+            "y": 1423,
+            "scaleX": 0.7272091937393179,
+            "scaleY": 0.7272091937393179
+        },
+        {
+            "type": "Container",
+            "id": "6802dab3-1a42-41ab-9a31-a75fb0315c13",
+            "label": "description",
+            "x": 82,
+            "y": 637,
+            "scaleX": 8.627905108991168,
+            "scaleY": 5.8491578380536975
+        },
+        {
+            "type": "Container",
+            "id": "73e03bf4-8b0a-4b58-b104-7d94b2acc5ce",
+            "label": "ui_charselect",
+            "scope": "CLASS",
+            "y": 1611,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "da661035-c4c4-473d-935f-7acb7612db23",
+                    "label": "skillName",
+                    "scope": "CLASS",
+                    "x": 91,
+                    "y": 4,
+                    "text": "New text",
+                    "fontFamily": "uvKits",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "e6d2e234-fd7a-4dfd-846c-d5761bac0eba",
+                    "label": "skillDesc",
+                    "scope": "CLASS",
+                    "x": 91,
+                    "y": 47,
+                    "text": "New text",
+                    "fontFamily": "uvKits",
+                    "fontSize": "35px",
+                    "color": "#000000ff",
+                    "maxLines": 3,
+                    "wordWrapWidth": 710
+                },
+                {
+                    "type": "Container",
+                    "id": "1b1974a4-752b-49a4-8002-beed70ed192c",
+                    "label": "charactersSelect",
+                    "scope": "CLASS",
+                    "x": 104,
+                    "y": -556
+                },
+                {
+                    "type": "Image",
+                    "id": "4b18027b-5781-4085-82b0-ad3c56147055",
+                    "label": "pokeball",
+                    "texture": {
+                        "key": "pokeball"
+                    },
+                    "x": 842,
+                    "y": -531,
+                    "scaleX": 2.478619187203443,
+                    "scaleY": 2.478619187203443,
+                    "alpha": 0.31,
+                    "alphaTopLeft": 0.31,
+                    "alphaTopRight": 0.31,
+                    "alphaBottomLeft": 0.31,
+                    "alphaBottomRight": 0.31
+                },
+                {
+                    "type": "Sprite",
+                    "id": "dd7a198e-53d5-4d7a-9eab-81daaf7f3d2e",
+                    "label": "charPreview",
+                    "scope": "CLASS",
+                    "texture": {},
+                    "x": 644,
+                    "y": -330,
+                    "scaleX": 2.0113764390033086,
+                    "scaleY": 2.0113764390033086
+                },
+                {
+                    "type": "Text",
+                    "id": "b26ddd99-c39e-4361-9571-ac85ab7df6b9",
+                    "label": "text_1",
+                    "x": 419,
+                    "y": -119,
+                    "scaleX": 0.7352569128867561,
+                    "scaleY": 0.7352569128867561,
+                    "text": "↑ або ↓ для навігації\n\"Пробіл\" для підтвердження\n\n",
+                    "fontFamily": "uvKits",
+                    "fontSize": "35px"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
