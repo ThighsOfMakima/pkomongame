@@ -84,17 +84,17 @@ const CHARACTERS = [
         skillColor: '#d1f2bf',
         hidden: false
     },
-    {
-        id: 'lewdyvoir',
-        name: 'Хтивковуар',
-        activeSkillName: 'Кульки!',
-        activeSkillDuration: 5,
-        activeSkillDesc: 'Кульки сподобались не лише Тренеру',
-        activeSkillFunc: LewdyvoirSP,
-        charSprite: 'lewdyvoir',
-        skillColor: '#75BA72',
-        hidden: true
-    }
+    // {
+    //     id: 'lewdyvoir',
+    //     name: 'Хтивковуар',
+    //     activeSkillName: 'Кульки!',
+    //     activeSkillDuration: 5,
+    //     activeSkillDesc: 'Кульки сподобались не лише Тренеру',
+    //     activeSkillFunc: LewdyvoirSP,
+    //     charSprite: 'lewdyvoir',
+    //     skillColor: '#75BA72',
+    //     hidden: true
+    // }
 ]
 
 export default CHARACTERS
