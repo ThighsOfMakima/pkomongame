@@ -286,18 +286,23 @@ export default class Game3 extends Phaser.Scene {
 
 		// objects_optional
 		const objects_optional = editabletilemap.createLayer("objects_optional", ["objects"], 0, 0);
+		objects_optional.visible = false;
 
 		// objects_required
 		const objects_required = editabletilemap.createLayer("objects_required", ["objects","tilemap"], 0, 0);
+		objects_required.visible = false;
 
 		// enemiesX
 		const enemiesX = editabletilemap.createLayer("enemiesX", ["objects","pokeball"], 0, 0);
+		enemiesX.visible = false;
 
 		// enemiesY
 		const enemiesY = editabletilemap.createLayer("enemiesY", ["objects"], 0, 0);
+		enemiesY.visible = false;
 
 		// player_spawn
 		const player_spawn = this.add.rectangle(449, 445, 128, 128);
+		player_spawn.visible = false;
 		player_spawn.isFilled = true;
 
 		// container_3
