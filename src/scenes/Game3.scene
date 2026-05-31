@@ -205,6 +205,7 @@
             "id": "c1a28469-b998-4641-a54b-4ee7d9126a47",
             "label": "objects_optional",
             "scope": "CLASS",
+            "visible": false,
             "tilemapId": "cdf93611-8e97-40f5-95b7-47ce3e8dc8b8"
         },
         {
@@ -212,6 +213,7 @@
             "id": "14ab411a-fc2f-4e85-a806-d169d5da02f0",
             "label": "objects_required",
             "scope": "CLASS",
+            "visible": false,
             "tilemapId": "cdf93611-8e97-40f5-95b7-47ce3e8dc8b8"
         },
         {
@@ -219,6 +221,7 @@
             "id": "2fbdc5e8-1fb0-4f44-887d-735ccfb66f45",
             "label": "enemiesX",
             "scope": "CLASS",
+            "visible": false,
             "tilemapId": "cdf93611-8e97-40f5-95b7-47ce3e8dc8b8"
         },
         {
@@ -226,6 +229,7 @@
             "id": "fbd825e5-b225-46d2-b151-22a526ddb37a",
             "label": "enemiesY",
             "scope": "CLASS",
+            "visible": false,
             "tilemapId": "cdf93611-8e97-40f5-95b7-47ce3e8dc8b8"
         },
         {
@@ -235,7 +239,7 @@
             "scope": "CLASS",
             "x": 449,
             "y": 445,
-            "editorRender": false,
+            "visible": false,
             "isFilled": true,
             "width": 128,
             "height": 128
