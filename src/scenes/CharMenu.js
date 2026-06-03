@@ -203,21 +203,21 @@ export default class CharMenu extends Phaser.Scene {
 	}
 
 	update() {
-		if (Phaser.Input.Keyboard.JustDown(this.scene.down) || GameInput.down) {
+		if (Phaser.Input.Keyboard.JustDown(this.scene.down) || GameInput.isClicked('down')) {
 			this.selectedCharIndex++;
 			if (this.selectedCharIndex >= this.characters.length) {
 				this.selectedCharIndex = 0;
 			}
 			this.updateCharacterSelection();
 		}
-		if (Phaser.Input.Keyboard.JustDown(this.scene.up) || GameInput.up) {
+		if (Phaser.Input.Keyboard.JustDown(this.scene.up) || GameInput.isClicked('up')) {
 			this.selectedCharIndex--;
 			if (this.selectedCharIndex < 0) {
 				this.selectedCharIndex = this.characters.length - 1;
 			}
 			this.updateCharacterSelection();
 		}
-		if (Phaser.Input.Keyboard.JustDown(this.scene.space) || GameInput.A) {
+		if (Phaser.Input.Keyboard.JustDown(this.scene.space) || GameInput.isClicked('A')) {
 			this.scene.start('Game', {
 				char: this.characters[this.selectedCharIndex]
 			});

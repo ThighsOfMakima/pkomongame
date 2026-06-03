@@ -44,11 +44,13 @@
 			height: 30vh;
 			width: 60vh;
 			display: block;
-			margin-left: 10px;
+			margin-left: 30px;
+			margin-top: 30px;
 		}
 		#abbuttons {
 			height: 30vh;
 			width: 40vh;
+			margin-top: 30px;
 		}
 
 		.dpadbutton {
@@ -57,6 +59,7 @@
 			background: white;
 			font-size: 50px;
 			text-align: center;
+			opacity: 0;
 		}
 		.up {
 			margin-left: 75px;
@@ -76,23 +79,62 @@
 		#A {
 			height: 75px;
 			width: 75px;
-			background: white;
+			background: url('./assets/A.png');
 			font-size: 50px;
 			text-align: center;
 			margin: auto;
+			background-size: contain;
 		}
+		
 		#B {
 			height: 75px;
 			width: 75px;
-			background: white;
+			background: url('./assets/B.png');
+			background-size: contain;
 			font-size: 50px;
 			text-align: center;
 			margin: auto;
-			margin-top: 50px;
+			margin-top: 70px;
 		}
-		#abbuttons {
-			margin-top: 10px;
+
+		#A, #B {
+			transition: 0.1s;
 		}
+
+		.dpadPic {
+			background: url('./assets/dpad.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 225px;
+			width: 27vh;
+			position: absolute;
+			min-width: 225px;
+		}
+		#dpad {
+    transition: 0.05s;
+}
+
+.dpad-left {
+    transform:
+        translateX(-2px)
+        rotate(-1deg);
+}
+
+.dpad-right {
+    transform:
+        translateX(2px)
+        rotate(1deg);
+}
+
+.dpad-up {
+    transform:
+        translateY(-2px);
+}
+
+.dpad-down {
+    transform:
+        translateY(2px);
+}
 	</style>
 
 </head>
@@ -101,14 +143,15 @@
 	</div>
 	<div id="controls-mobile">
 		<div id="dpad">
+			<div class = 'dpadPic'></div>
 			<div id="up" class="dpadbutton up">▲</div>
 			<div id="right" class="dpadbutton right">▶</div>
 			<div id="down" class="dpadbutton down">▼</div>
 			<div id="left" class="dpadbutton left">◀</div>
 		</div>
 		<div id="abbuttons">
-			<div id="A">A</div>
-			<div id="B">B</div>
+			<div id="A"></div>
+			<div id="B"></div>
 		</div>
 	</div>
 </body>
